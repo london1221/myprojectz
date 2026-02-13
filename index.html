@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>London's projects</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(45deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff);
+            background-size: 400% 400%;
+            animation: rainbowShift 15s ease infinite;
+        }
+
+        @keyframes rainbowShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1 { 
+            color: white; 
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            font-size: 3rem;
+            margin-bottom: 30px;
+        }
+
+        .button-container { 
+            display: flex; 
+            gap: 20px; 
+        }
+
+        .btn {
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            color: #333;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            border: none;
+        }
+
+        /* Updated hover color to green */
+        .btn:hover { 
+            background-color: #28a745; 
+            color: white;
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>London's projects</h1>
+
+    <div class="button-container">
+        <a href="https://scratch.mit.edu" class="btn">soundboard</a>
+        <a href="https://london1221.github.io" class="btn">game</a>
+        <a href="https://scratch.mit.edu" class="btn">my page</a>
+    </div>
+
+</body>
+</html>
